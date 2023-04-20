@@ -1,0 +1,77 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R2
+U 1 1 64417383
+P 2450 3450
+F 0 "R2" H 2520 3496 50  0000 L CNN
+F 1 "470" H 2520 3405 50  0000 L CNN
+F 2 "" V 2380 3450 50  0001 C CNN
+F 3 "~" H 2450 3450 50  0001 C CNN
+	1    2450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6441822D
+P 1850 3100
+F 0 "R1" V 1643 3100 50  0000 C CNN
+F 1 "1k" V 1734 3100 50  0000 C CNN
+F 2 "" V 1780 3100 50  0001 C CNN
+F 3 "~" H 1850 3100 50  0001 C CNN
+	1    1850 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 3100 2450 3100
+Wire Wire Line
+	2450 3100 2450 3300
+$Comp
+L pspice:VSOURCE VSOURCE
+U 1 1 64419583
+P 1350 3600
+F 0 "VSOURCE" H 1578 3646 50  0000 L CNN
+F 1 "12" H 1578 3555 50  0000 L CNN
+F 2 "" H 1350 3600 50  0001 C CNN
+F 3 "~" H 1350 3600 50  0001 C CNN
+	1    1350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3100 1350 3100
+Wire Wire Line
+	1350 3100 1350 3300
+Wire Wire Line
+	1350 3900 1350 4000
+Wire Wire Line
+	1350 4000 1900 4000
+Wire Wire Line
+	2450 4000 2450 3600
+$Comp
+L power:GND #PWR?
+U 1 1 6441AAAE
+P 1900 4000
+F 0 "#PWR?" H 1900 3750 50  0001 C CNN
+F 1 "GND" H 1905 3827 50  0000 C CNN
+F 2 "" H 1900 4000 50  0001 C CNN
+F 3 "" H 1900 4000 50  0001 C CNN
+	1    1900 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 4000
+Wire Wire Line
+	1900 4000 2450 4000
+$EndSCHEMATC

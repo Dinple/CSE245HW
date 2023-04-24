@@ -1,0 +1,6 @@
+test circuit
+V1 1 0 PULSE (0 5 1u 1u 1u 1 1)
+R1 1 2 50
+L1 2 3 0.01
+C1 3 0 1u
+.end

@@ -1,0 +1,6 @@
+* Spice netlister for gnetlist
+* Spice backend written by Bas Gieltjes
+V1 n1 0 SIN(0 1 1kHz)
+C1 n2 n1 1
+R1 0 n2 1
+.END

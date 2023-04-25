@@ -1,0 +1,13 @@
+Warning : The following matrix is factored in to LU form.
+Circuit Matrix
+4	real
+4	1	1
+1	1	1
+2	1	-1
+1	4	1
+1	2	-1
+2	2	1.91213020395241e-06
+3	2	-1
+2	3	-1.91213020395241e-06
+3	3	-1.91213386019432e-06
+0	0	0.0

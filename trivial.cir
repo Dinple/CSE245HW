@@ -1,0 +1,9 @@
+* test
+V1 n1 0 SIN(0 1 6Hz)
+R1 n1 n2 1
+
+.control
+tran 1m 1
+.endc
+
+.END

@@ -1,0 +1,3 @@
+.title test
+Vpulse input 0 DC 0V PULSE(0V 1V 0s 0s 0s 1ns 1us)
+C2 input 6 1e-09

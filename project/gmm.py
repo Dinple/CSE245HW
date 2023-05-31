@@ -25,7 +25,7 @@ class GMM:
         return np.random.normal(self.mean, self.std, (n, len(self.mean)))
     
 def main():
-    gmm = GMM(np.array([1, 1, 1]), np.array([1, 2, 3]))
+    gmm = GMM(np.array([1, 1, 1, 1]), np.array([1, 2, 3]))
     print(gmm.sample(10))
 
 if __name__ == '__main__':

@@ -34,7 +34,7 @@ def hash_edge_name(node1, node2):
 
 ##################### GENERATE CIRCUIT GRAPH #####################
 # use networkx to generate a graph of the circuit
-circuit_graph = nx.grid_graph(dim=[2, 6])
+circuit_graph = nx.grid_graph(dim=[4, 6])
 
 mst = nx.minimum_spanning_tree(circuit_graph, algorithm="prim")
 print(mst.nodes)
@@ -84,7 +84,7 @@ fallTime = 100 @ u_ps
 
 circuit = Circuit("test")
 circuit.PulseVoltageSource(
-    "clock",
+    "pulse",
     "51in",
     circuit.gnd,
     initial_value=startVoltage,

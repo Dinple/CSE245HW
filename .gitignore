@@ -1,2 +1,4 @@
 hw2/Pubmed/*
 project/__pycache__/*
+project/utils/__pycache__/*
+.DS_Store
